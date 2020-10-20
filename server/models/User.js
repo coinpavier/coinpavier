@@ -13,7 +13,7 @@ fisrt_name: {
     type: String,
     required: true
   },
-  bitcoin_address: {
+  wallet: {
     type: String,
     required: true
   },
@@ -25,8 +25,9 @@ fisrt_name: {
     type: String,
     required: true
   },
-  usedcode:{
+  code:{
     type: String,
+    required: false
     
   },
   availbalance:{
@@ -41,12 +42,45 @@ fisrt_name: {
     type: String,
     default: 'starter'
   },
+  totalprofit:{
+    type: String,
+    default: "00.00"
+  },
+  tatalinvestment:{
+    type: Number,
+    default: 0
+  },
+  referacount :{
+    type: Number,
+    default: 1
+  },
+  acticvatedaccount:{
+    type: Boolean,
+    default: false,
+  },
   refaralsbonus:{
     type: String,
     default: '00.00'
   },
+  address:{
+    type: String,
+    required: false
+  },
+  city:{
+    type: String,
+    required: false
+  },
+  zipcode:{
+    type: String,
+    required: false
+  },
+  idcard:{
+    type: String,
+    required: false
+  },
   referalcode:{
     type: String,
+    required: false
   },
   date: {
     type: Date,
