@@ -82,12 +82,12 @@ router.post('/register', (req, res) => {
                 console.log(user);
      
                 let transporter = nodemailer.createTransport({
-                  host: 'mail.privateemail.com',
-                  port: 465,
-                  secure: true, // true for 465, false for other ports
+                  host: 'smtp.mailgun.org',
+                  port: 587,
+                  secure: false, // true for 465, false for other ports
                   auth: {
-                      user: 'mail@coinpavier.com', // generated ethereal user
-                      pass: 'mirahmirah'  // generated ethereal password
+                      user: 'postmaster@mail.coinpavier.com', // generated ethereal user
+                      pass: 'b601456323c8d962e1fd879d6f6bb2f2-2af183ba-e2cdc6c5'  // generated ethereal password
                   },
                   tls:{
                     rejectUnauthorized:false
@@ -267,10 +267,6 @@ router.post('/register', (req, res) => {
                     <!--[if (!mso)&(!IE)]><!-->
                     <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:5px; padding-bottom:5px; padding-right: 0px; padding-left: 0px;">
                     <!--<![endif]-->
-                    <div align="center" class="img-container center autowidth" style="padding-right: 0px;padding-left: 0px;">
-                    <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr style="line-height:0px"><td style="padding-right: 0px;padding-left: 0px;" align="center"><![endif]--><img align="center" alt=" " border="0" class="center autowidth" src="https://coinpavier.com/images/Your_Logo.png" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 154px; display: block;" title="Alternate text" width="154"/>
-                    <!--[if mso]></td></tr></table><![endif]-->
-                    </div>
                     <!--[if (!mso)&(!IE)]><!-->
                     </div> 
                     <!--<![endif]-->
