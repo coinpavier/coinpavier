@@ -1807,6 +1807,28 @@ a {
     left: -1rem;
   }
 }
+
+.cid-sbinEozhYE {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-sbinEozhYE img {
+  width: 120px;
+  margin: auto;
+}
+.cid-sbinEozhYE .card {
+  transition: all 0.3s;
+  height: fit-content;
+  padding: 1rem 0;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .cid-sbinEozhYE .card {
+    max-width: 12.5%;
+  }
+}
 .cid-sbjC4xk2AM {
   padding-top: 6rem;
   padding-bottom: 6rem;
