@@ -12,6 +12,9 @@ router.get('/contact', forwardAuthenticated, (req, res) => res.render('contact')
 // About us
 router.get('/about', forwardAuthenticated, (req, res) => res.render('about'));
 
+// INVESTMENTS STRATEGY
+router.get('/strategy', forwardAuthenticated, (req, res) => res.render('strategy'));
+
 // FAQ
 
 router.get('/help', forwardAuthenticated, (req, res) => res.render('faq'));
