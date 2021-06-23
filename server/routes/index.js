@@ -93,6 +93,11 @@ router.get('/checkout', ensureAuthenticated, (req, res) =>
     user: req.user
   })
 );
+router.get('/deposit-success', ensureAuthenticated, (req, res) =>
+  res.render('deposit', {
+    user: req.user
+  })
+);
 router.get('/bloop', ensureAuthenticated, (req, res) =>
   res.render('complete', {
     user: req.user
