@@ -86,8 +86,8 @@ router.post('/register', (req, res) => {
                   port: 587,
                   secure: false, // true for 465, false for other ports
                   auth: {
-                      user: 'postmaster@mail.coinpavier.com', // generated ethereal user
-                      pass: 'b601456323c8d962e1fd879d6f6bb2f2-2af183ba-e2cdc6c5'  // generated ethereal password
+                      user: '', // generated ethereal user
+                      pass: ''  // generated ethereal password
                   },
                   tls:{
                     rejectUnauthorized:false
@@ -96,7 +96,7 @@ router.post('/register', (req, res) => {
               
                 // setup email data with unicode symbols
                 let mailOptions = {
-                    from: '"Bennit from Coinpavier" <mail@coinpavier.com>', // sender address
+                    from: '"Bennit from Coinpavier" <info@coinpavier.com>', // sender address
                     to: email, // list of receivers
                     subject: 'Your Passport to financial Freedom', // Subject line
                     text: 'Start Today!', // plain text body
